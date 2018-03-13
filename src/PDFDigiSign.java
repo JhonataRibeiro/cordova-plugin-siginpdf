@@ -96,7 +96,7 @@ public class PDFDigiSign extends CordovaPlugin {
             catch (Exception e)
             {
               e.printStackTrace();
-              callbackContext.error(-1); // Thread-safe.
+              callbackContext.error('error 1' + e); // Thread-safe.
             }
         }
       });
@@ -120,7 +120,7 @@ public class PDFDigiSign extends CordovaPlugin {
             catch (Exception e)
             {
               e.printStackTrace();
-              callbackContext.error(-1); 
+              callbackContext.error('error 2' + e); 
             }
         }
       });
